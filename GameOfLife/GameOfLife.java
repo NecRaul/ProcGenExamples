@@ -52,8 +52,8 @@ public class GameOfLife {
 
     private static int countAliveCells(boolean[][] booleanArray) {
         int count = 0;
-        for (int i = 0; i < booleanArray.length; i++) {
-            for (int j = 0; j < booleanArray.length; j++) {
+        for (int i = 1; i < booleanArray.length - 1; i++) {
+            for (int j = 1; j < booleanArray.length - 1; j++) {
                 if (booleanArray[i][j]) {
                     count++;
                 }
