@@ -20,7 +20,7 @@ for i in range(size):
             lacunarity=lacunarity,
             repeatx=1024,
             repeaty=1024,
-            base=0,
+            base=random.randrange(1),
         )
 
 plt.imshow(noise_map, cmap="gray", origin="lower")
