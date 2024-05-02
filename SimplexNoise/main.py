@@ -3,8 +3,8 @@ import noise
 import numpy as np
 import matplotlib.pyplot as plt
 
-size = 1024
-scale = 256
+size = 1000
+scale = 100
 octaves = 6
 persistence = 0.5
 lacunarity = 1.0
@@ -18,8 +18,8 @@ for i in range(size):
             octaves=octaves,
             persistence=persistence,
             lacunarity=lacunarity,
-            repeatx=1024,
-            repeaty=1024,
+            repeatx=1000,
+            repeaty=1000,
             base=random.randrange(1),
         )
 

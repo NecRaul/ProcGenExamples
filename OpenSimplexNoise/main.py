@@ -1,10 +1,11 @@
+import random
 import opensimplex
 import numpy as np
 import matplotlib.pyplot as plt
-import random
 
-size = 1024
-scale = 128
+size = 1000
+scale = 100
+
 noise_map = np.zeros((size, size))
 noise = opensimplex.OpenSimplex(seed=random.randrange(1))
 for i in range(size):
